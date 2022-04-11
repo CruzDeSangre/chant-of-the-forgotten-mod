@@ -1,0 +1,21 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Base Naval Sudamericana"
+		naval_base = 241  # Wilhelmshaven
+		task_force = {
+			name = "Escuadrón Sudamericano"
+			location = 241  # Wilhelmshaven
+			ship = { name = "Wilhelm" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "Franz" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "Otto" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "Preussen" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "Deutschland" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "Österreich" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "Berlin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "Königsberg" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+		}
+	}
+}

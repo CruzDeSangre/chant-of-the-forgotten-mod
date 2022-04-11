@@ -1,0 +1,31 @@
+
+state={
+	id=855
+	name="STATE_855"
+	
+	state_category = pastoral
+	resources={
+		oil = 12
+	}
+
+	history={
+		owner = BOL
+		buildings = {
+			infrastructure = 1
+			12979 = {
+				bunker = 1
+			}
+
+		}
+		add_core_of = BOL
+		add_core_of = PAR
+
+	}
+
+	provinces={
+		 12902 12916 2160 12979
+	}
+	manpower=16990
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

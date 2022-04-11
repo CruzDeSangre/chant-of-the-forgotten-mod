@@ -1,0 +1,61 @@
+ACP = "countries/Autonomous Chinese Ports.txt"
+
+SIB = "countries/Siberia.txt"
+
+TWN = "countries/Taiwan.txt"
+
+RBL = "countries/Reichs Belgium.txt"
+
+RBU = "countries/Reichs Burgundy.txt"
+
+RPL = "countries/Reichs Poland.txt"
+
+RKA = "countries/Reichs Kaukasus.txt"
+
+RMO = "countries/Reichs Moscow.txt"
+
+RNT = "countries/Reichs Netherlands.txt"
+
+RNW = "countries/Reichs Norway.txt"
+
+RST = "countries/Reichs Ostland.txt"
+
+RKR = "countries/Reichs Ukraine.txt"
+
+RHI = "countries/Rhineland.txt"
+
+RJW = "countries/Reichs Jew.txt"
+
+HGK = "countries/Hong Kong.txt"
+
+SIZ = "countries/Suez.txt"
+
+SRD = "countries/Sardinia.txt"
+
+VNC = "countries/Venice.txt"
+
+TSC = "countries/Two Sicilies.txt"
+
+GRR = "countries/German Revolt.txt"
+
+BR0 = "countries/Rio de Janeiro.txt"
+
+BR1 = "countries/Sao Paulo.txt"
+
+BR2 = "countries/Parana.txt"
+
+BR3 = "countries/Rio Grande do Sul.txt"
+
+BR4 = "countries/Amazonas.txt"
+
+BR5 = "countries/Mato Grosso.txt"
+
+BR6 = "countries/Maracaju.txt"
+
+BR7 = "countries/Goias.txt"
+
+BR8 = "countries/Bahia.txt"
+
+BR9 = "countries/Maranhao.txt"
+
+BRX = "countries/Rio Grande do Norte.txt"

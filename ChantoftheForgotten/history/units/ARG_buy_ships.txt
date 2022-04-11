@@ -1,0 +1,18 @@
+units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Armada Argentina"			
+		naval_base = 12364 # Buenos Aires
+		task_force = {
+			name = "Armada del Atlántico"
+			location = 12364 # Buenos Aires
+			ship = { name = "San Martín" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CHL creator = ENG version_name = "Queen Elizabeth Class" } } }
+			ship = { name = "Juan de Rosas" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CHL creator = ENG version_name = "Queen Elizabeth Class" } } }	
+			ship = { name = "Manuel Belgrano" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+			ship = { name = "Bartolomé Mitre" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+			ship = { name = "Cornelio Saavedra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+			ship = { name = "William Brown" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+
+		}
+	}
+}

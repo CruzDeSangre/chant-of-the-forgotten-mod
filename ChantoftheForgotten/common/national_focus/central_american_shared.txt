@@ -1,0 +1,629 @@
+shared_focus = {
+	id = CENTRAL_a_memory
+	icon = GFX_focus_generic_treaty
+	x = 26
+	y = 0
+
+	allow_branch = {
+		OR = {
+			tag = GUA
+			tag = BLZ
+			tag = HON
+			tag = ELS
+			tag = NIC
+			tag = COS
+		}
+	}
+
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			is_historical_focus_on = no
+			add = 15
+		}
+		modifier = {
+			MEX = { has_completed_focus = MEX_focus_march_southwards }
+			add = 35
+		}
+		modifier = {
+			has_government = democratic
+			factor = 0
+		}
+	}
+
+	available = {
+		is_subject = no
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = central_american_dream
+	}
+}
+
+shared_focus = {
+	id = CENTRAL_a_dream
+	icon = GFX_goal_generic_national_unity
+	x = 0
+	y = 1
+	prerequisite = { focus = CENTRAL_a_memory }
+	relative_position_id = CENTRAL_a_memory
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			is_historical_focus_on = no
+			add = 15
+		}
+		modifier = {
+			MEX = { has_completed_focus = MEX_focus_march_southwards }
+			add = 35
+		}
+	}
+
+	available = {
+		is_subject = no
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = central_american_dream
+			add_idea = central_american_dream2
+		}
+		every_state = {
+			limit = {
+				NOT = { is_core_of = ROOT }
+				OR = {
+					state = 313
+					state = 311
+					state = 314
+					state = 312
+					state = 317
+					state = 316
+				}
+			}
+			add_claim_by = ROOT
+		}
+	}
+}
+
+shared_focus = {
+	id = CENTRAL_a_crusade
+	icon = GFX_focus_generic_manpower
+	x = 0
+	y = 1
+	prerequisite = { focus = CENTRAL_a_dream }
+	relative_position_id = CENTRAL_a_dream
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			is_historical_focus_on = no
+			add = 15
+		}
+		modifier = {
+			MEX = { has_completed_focus = MEX_focus_march_southwards }
+			add = 35
+		}
+	}
+
+	available = {
+		is_subject = no
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		if = { limit = { NOT = { owns_state = 313 } }
+			313 = {
+				CONTROLLER = {
+					ROOT = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							expire = 0
+							generator = { 313 }
+						}
+					}
+				}
+			}
+		}
+
+		if = { limit = { NOT = { owns_state = 311 } is_ai = no }
+			311 = {
+				CONTROLLER = {
+					ROOT = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							expire = 0
+							generator = { 311 }
+						}
+					}
+				}
+			}
+		}
+
+		if = { limit = { NOT = { owns_state = 314 } }
+			314 = {
+				CONTROLLER = {
+					ROOT = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							expire = 0
+							generator = { 314 }
+						}
+					}
+				}
+			}
+		}
+
+		if = { limit = { NOT = { owns_state = 312 } }
+			312 = {
+				CONTROLLER = {
+					ROOT = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							expire = 0
+							generator = { 312 }
+						}
+					}
+				}
+			}
+		}
+
+		if = { limit = { NOT = { owns_state = 317 } }
+			317 = {
+				CONTROLLER = {
+					ROOT = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							expire = 0
+							generator = { 317 }
+						}
+					}
+				}
+			}
+		}
+
+		if = { limit = { NOT = { owns_state = 316 } }
+			316 = {
+				CONTROLLER = {
+					ROOT = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							expire = 0
+							generator = { 316 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CENTRAL_unidad_centroamericana
+	icon = GFX_CENTRAL_Presidential_Restoration
+	x = 0
+	y = 1
+	prerequisite = { focus = CENTRAL_a_crusade }
+	relative_position_id = CENTRAL_a_crusade
+	
+	cost = 10
+	
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			is_historical_focus_on = no
+			add = 15
+		}
+		modifier = {
+			MEX = { has_completed_focus = MEX_focus_march_southwards }
+			add = 35
+		}
+	}
+	
+	available = {
+		313 = { is_core_of = ROOT }
+		311 = { is_core_of = ROOT }
+		314 = { is_core_of = ROOT }
+		312 = { is_core_of = ROOT }
+		317 = { is_core_of = ROOT }
+		316 = { is_core_of = ROOT }
+	}
+	
+	bypass = {
+			
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = central_american_dream2
+			add_idea = central_american_dream3
+		}
+		
+		if = { limit = { GUA = { exists = no } }
+			GUA = {
+				every_unit_leader = {
+					set_nationality = ROOT
+				}
+			}
+		}
+
+		if = { limit = { HON = { exists = no } }
+			HON = {
+				every_unit_leader = {
+					set_nationality = ROOT
+				}
+			}
+		}
+
+		if = { limit = { ELS = { exists = no } }
+			ELS = {
+				every_unit_leader = {
+					set_nationality = ROOT
+				}
+			}
+		}
+
+		if = { limit = { NIC = { exists = no NOT = { has_government = communism } } NOT = { has_government = communism } }
+			NIC = {
+				every_unit_leader = {
+					set_nationality = ROOT
+				}
+			}
+		}
+		else_if = { limit = { NIC = { exists = no has_government = communism } NOT = { has_government = communism } }
+			NIC = {
+				every_unit_leader = {
+					limit = {
+						NOT = { has_trait = trait_JOS_anarchist }
+					}
+					set_nationality = ROOT
+				}
+			}
+		}
+		else_if = { limit = { NIC = { exists = no has_government = communism } has_government = communism }
+			NIC = {
+				every_unit_leader = {
+					set_nationality = ROOT
+				}
+			}
+		}
+
+		if = { limit = { COS = { exists = no } }
+			COS = {
+				every_unit_leader = {
+					set_nationality = ROOT
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CENTRAL_yes_we_have_bananas
+	icon = GFX_CENTRAL_bananas
+	x = 0
+	y = 1
+	prerequisite = { focus = CENTRAL_unidad_centroamericana }
+	relative_position_id = CENTRAL_unidad_centroamericana
+	
+	cost = 10
+	
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			is_historical_focus_on = no
+			add = 15
+		}
+		modifier = {
+			MEX = { has_completed_focus = MEX_focus_march_southwards }
+			add = 35
+		}
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+			
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_ideas = free_trade
+		swap_ideas = {
+			remove_idea = central_american_dream3
+			add_idea = central_american_dream4
+		}
+		
+		random_state = {
+			limit = {
+				is_owned_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		random_state = {
+			limit = {
+				is_owned_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CENTRAL_sugar_exports
+	icon = GFX_CENTRAL_sugar_plantations
+	x = 1
+	y = 1
+	prerequisite = { focus = CENTRAL_yes_we_have_bananas }
+	relative_position_id = CENTRAL_yes_we_have_bananas
+	
+	cost = 10
+	
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			is_historical_focus_on = no
+			add = 15
+		}
+		modifier = {
+			MEX = { has_completed_focus = MEX_focus_march_southwards }
+			add = 35
+		}
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+			
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	
+	completion_reward = {
+		random_state = {
+			limit = {
+				is_owned_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_state = {
+			limit = {
+				is_owned_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CENTRAL_guard_the_seas
+	icon = GFX_goal_generic_construct_naval_dockyard
+	x = -1
+	y = 1
+	prerequisite = { focus = CENTRAL_yes_we_have_bananas }
+	relative_position_id = CENTRAL_yes_we_have_bananas
+	
+	cost = 10
+	
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			is_historical_focus_on = no
+			add = 15
+		}
+		modifier = {
+			MEX = { has_completed_focus = MEX_focus_march_southwards }
+			add = 35
+		}
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+			
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 3
+			category = naval_equipment
+		}
+		add_offsite_building = { type = dockyard level = 5 }
+	}
+}
+
+shared_focus = {
+	id = CENTRAL_the_last_state
+	icon = GFX_goal_generic_position_armies
+	x = 0
+	y = 2
+	prerequisite = { focus = CENTRAL_yes_we_have_bananas }
+	relative_position_id = CENTRAL_yes_we_have_bananas
+	
+	cost = 10
+	
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			is_historical_focus_on = no
+			add = 15
+		}
+		modifier = {
+			MEX = { has_completed_focus = MEX_focus_march_southwards }
+			add = 35
+		}
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+			
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	
+	completion_reward = {
+		every_state = {
+			limit = {
+				OR = {
+					state = 304
+					state = 685
+				}
+			}
+			add_core_of = ROOT
+		}
+		if = { limit = { NOT = { owns_state = 304 } }
+			304 = {
+				CONTROLLER = {
+					ROOT = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							expire = 0
+							generator = { 304 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CENTRAL_liberate_the_north
+	icon = GFX_focus_prc_infiltration
+	x = 0
+	y = 1
+	prerequisite = { focus = CENTRAL_the_last_state }
+	relative_position_id = CENTRAL_the_last_state
+	
+	cost = 10
+	
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			is_historical_focus_on = no
+			add = 15
+		}
+		modifier = {
+			MEX = { has_completed_focus = MEX_focus_march_southwards }
+			add = 35
+		}
+	}
+	
+	available = {
+		
+	}
+	
+	bypass = {
+			
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_state_core = 474
+		add_state_core = 475
+		if = { limit = { NOT = { owns_state = 475 } }
+		475 = {
+				CONTROLLER = {
+					ROOT = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							expire = 0
+							generator = { 475 }
+						}
+					}
+				}
+			}
+		}
+	}
+}

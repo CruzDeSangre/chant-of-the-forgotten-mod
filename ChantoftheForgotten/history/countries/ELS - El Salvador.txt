@@ -1,0 +1,163 @@
+﻿capital = 314
+
+oob = "ELS_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	early_fighter = 1
+}
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 5
+
+1939.1.1 = {
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "ELS_1939"
+	set_technology = {
+		infantry_weapons1 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.1.15"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	fascism = 100
+}
+
+create_country_leader = {
+	name = "Maximiliano Hernández Martínez"
+	desc = "POLITICS_MAXIMILIANO_HERNANDEZ_MARTINEZ_DESC"
+	picture = "gfx/leaders/ELS/Portrait_ELS_Maximiliano_Hernández_Martínez.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Arturo Araujo Fajardo"
+	desc = "POLITICS_ARTURO_FAJARDO_DESC"
+	picture = "gfx/leaders/ELS/Portrait_ELS_Arturo_Araujo_Fajardo.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Miguel Marmol"
+	desc = "POLITICS_MAIGUEL_MARMOL_DESC"
+	picture = "gfx/leaders/ELS/Portrait_ELS_Miguel_Mármol.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Salvador Castaneda Castro"
+	desc = "POLITICS_SALVADOR_CASTRO_DESC"
+	picture = "gfx/leaders/ELS/Portrait_ELS_Salvador_Castaneda_Castro.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1939.1.3"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
+
+### Field Marshals ###
+create_field_marshal = {
+	name = "Maximiliano Hernandez Martínez"
+	portrait_path = "gfx/leaders/ELS/Portrait_ELS_Maximiliano_Hernández_Martínez.tga"
+	traits = {
+		infantry_officer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+### Corps Commanders ###
+#create_corps_commander = {
+#	name = "Andrés Ignacio Menéndez"
+#	desc = "ELS_ANDRES_IGNACIO_MENENDEZ_DESC"
+#	portrait_path = "gfx/leaders/ELS/Portrait_ELS_Andres_Ignacio_Menendez.tga"
+#	traits = {
+#		career_officer
+#		trait_cautious
+#	}
+#	skill = 2
+#	attack_skill = 1
+#	defense_skill = 2
+#	planning_skill = 1
+#	logistics_skill = 3
+#}
+
+create_corps_commander = {
+	name = "Osmín Aguirre Y Salinas"
+	desc = "ELS_OSMIN_AGUIRRE_Y_SALINAS_DESC"
+	portrait_path = "gfx/leaders/ELS/Portrait_ELS_Osmin_Aguirre_y_Salinas.tga"
+	traits = {
+		career_officer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}

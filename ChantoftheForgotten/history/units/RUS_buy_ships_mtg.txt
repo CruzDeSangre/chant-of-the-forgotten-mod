@@ -1,0 +1,22 @@
+units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Transfered Ships"			
+		naval_base = 3151 # Petrograd
+		task_force = {
+			name = "Baltic Fleet"
+			location = 3151 # Petrograd
+			ship = { name = "Nikolai II" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIK creator = ENG version_name = "Queen Elizabeth Class" } } }
+			ship = { name = "General Wrangel" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIK creator = ENG version_name = "Queen Elizabeth Class" } } }
+			ship = { name = "Alexander III" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIK creator = ENG version_name = "Queen Elizabeth Class" } } }	
+			ship = { name = "General Kornilov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIK creator = ENG version_name = "S Class"} } }
+			ship = { name = "General Denikin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIK creator = ENG version_name = "S Class"} } }
+			ship = { name = "Admiral Kolchak" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIK creator = ENG version_name = "S Class"} } }
+			ship = { name = "General Krasnov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIK creator = ENG version_name = "S Class"} } }
+			ship = { name = "Nadezhda" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIK creator = ENG version_name = "S Class"} } }
+			ship = { name = "Moshch" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIK creator = ENG version_name = "S Class"} } }
+			ship = { name = "Mir" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIK creator = ENG version_name = "S Class"} } }
+
+		}
+	}
+}

@@ -1,0 +1,30 @@
+state = { # Shantou
+	id = 845
+	name = "STATE_845"
+	manpower = 196000
+	state_category = town
+
+	history = {
+		owner = GXC
+		add_core_of = GXC
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			9938 1
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			9938 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+	provinces = {
+		9938
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,120 @@
+﻿capital = 330
+
+oob = "MON_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_stability = 0.35
+set_war_support = 0.3
+
+add_ideas = {
+	limited_conscription
+	dispersed_society
+	soviet_influence_mon
+	stalinist_terror
+	dreams_of_independence
+}
+
+set_cosmetic_tag = MON_names
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 100
+}
+
+set_party_name = { 
+	ideology = democratic
+	name = MON_communism_party
+	long_name = MON_communism_party_long
+}
+
+create_country_leader = {
+	name = "Anandyn Amar"
+	desc = ""
+	picture = "gfx/leaders/MON/Portrait_Anandyn_Amar.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		hope_of_mongolia
+	}
+}
+
+create_country_leader = {
+	name = "Jamsrangiin Tseveen"
+	desc = ""
+	picture = "gfx/leaders/MON/Portrait_MON_Jamsrangiin_Tseveen.tga"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "7th Changkya Khutukhtu"
+	desc = ""
+	picture = "gfx/leaders/MON/Portrait_MON_7th_Changkya_Khutukhtu.tga"
+	expire = "1965.1.1"
+	ideology = theocracy
+	traits = {
+		mongol_lama
+	}
+}
+
+create_country_leader = {
+	name = "7th Changkya Khutukhtu"
+	desc = ""
+	picture = "gfx/leaders/MON/Portrait_MON_7th_Changkya_Khutukhtu.tga"
+	expire = "1965.1.1"
+	ideology = theocracy2
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Gelegdorjiin Demid"
+	portrait_path = "gfx/leaders/MON/Portrait_Demid.dds"
+	traits = { 
+		cavalry_officer
+		career_officer
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+	id = 19240
+}
+
+create_field_marshal = {
+	name = "Khorloogiin Choibalsan"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Khorloogiin_Choibalsan.dds"
+	traits = { trait_SPR_stalinist_loyalties politically_connected media_personality war_hero harsh_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+	id = 19241
+}
+
+create_corps_commander = {
+	name = "Butochiyn Tsog"
+	portrait_path = "gfx/leaders/MON/Portrait_MON_Butochiyn_Tsog.dds"
+	traits = { JAP_communist_sympathizer infantry_leader career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 19242
+}

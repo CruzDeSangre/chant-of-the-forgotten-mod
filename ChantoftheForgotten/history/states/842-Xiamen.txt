@@ -1,0 +1,26 @@
+state = { # Xiamen
+	id = 842
+	name = "STATE_842"
+	manpower = 177000
+	state_category = town
+
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			7071 1
+		}
+
+		buildings = {
+			infrastructure = 3
+			7071 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {
+		7071
+	}
+	local_supplies=0.0 
+}

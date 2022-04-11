@@ -1,0 +1,14 @@
+units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Transfered Ships"			
+		naval_base = 1047 # Guangzhou
+		task_force = {
+			name = "Guangzhou Fleet"
+			location = 1047 # Guangzhou
+			ship = { name = "HMS Norfolk" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GXC creator = ENG version_name = "County Class" } } }
+			ship = { name = "HMS London" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GXC creator = ENG version_name = "County Class" } } }
+			ship = { name = "HMS Sussex" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GXC creator = ENG version_name = "County Class" } } }	
+		}
+	}
+}

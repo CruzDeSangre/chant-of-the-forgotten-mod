@@ -1,0 +1,236 @@
+﻿capital = 327
+
+oob = "PHI_1936"
+
+set_stability = 0.55
+set_war_support = 0.15
+
+add_ideas = {
+	philippine_commonwealth
+	political_guerrillas
+	mass_poberty_in_the_countryside
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+}
+
+set_convoys = 40
+
+set_party_name = { 
+	ideology = fascism
+	long_name = PHI_fascism_party_cotf 
+	name = PHI_fascism_party_cotf 
+}
+
+set_party_name = { 
+	ideology = democratic
+	long_name = PHI_democratic_party_cotf 
+	name = PHI_democratic_party_cotf 
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.9.15"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 80
+	fascism = 10
+	communism = 10
+}
+
+create_country_leader = {
+	name = "Manuel Luis Quezón"
+	desc = "POLITICS_MANUEL_LUIS_QUEZON_DESC"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Manuel_Luis_Quezon_KR.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Benigno Ramos"
+	desc = ""
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Benigno_Ramos.tga"
+	expire = "1965.1.1"
+	ideology = left_nationalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Crisanto Evangelista"
+	desc = ""
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Crisanto_Evangelista.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Basilio Valdez"
+	desc = ""
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Basilio_J_Valdez.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+### (Government and Black army) ###
+
+### Field Marshals ###
+
+create_field_marshal = {
+	name = "Basilio Valdez"
+	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Basilio_J_Valdez.tga"
+	traits = { war_hero career_officer media_personality }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+### Corps Commanders ###
+
+create_corps_commander = {
+	name = "Vicente Lim" # The chad guerrilla fighter vs The virgin exiled government marshal
+	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Vicente_Lim.tga"
+	traits = { infantry_officer trickster commando }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ruperto Kangleon" 
+	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Ruperto_Kangleon.tga"
+	traits = { infantry_officer trickster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Paulino Santos"
+	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Paulino_Santos.tga"
+	traits = { career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Carlos Romulo"
+	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Carlos_P_Romulo.tga"
+	traits = { media_personality }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### (Hukbalahap) ###
+
+### Field Marshals ###
+
+#create_field_marshal = {
+#	name = "Luis Taruc"
+#	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Luis_Taruc.tga"
+#	traits = { JAP_communist_sympathizer trickster guerilla_fighter }
+#	skill = 3
+#	attack_skill = 2
+#	defense_skill = 3
+#	planning_skill = 2
+#	logistics_skill = 3
+#}
+
+### Corps Commanders ###
+
+#create_corps_commander = {
+#	name = "Casto Alejandrino"
+#	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Casto_Alejandrino.tga"
+#	traits = { JAP_communist_sympathizer trickster commando }
+#	skill = 2
+#	attack_skill = 1
+#	defense_skill = 2
+#	planning_skill = 2
+#	logistics_skill = 2
+#}
+
+#create_corps_commander = {
+#	name = "Juan Feleo"
+#	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Juan_Feleo.tga"
+#	traits = { JAP_communist_sympathizer trickster }
+#	skill = 2
+#	attack_skill = 1
+#	defense_skill = 2
+#	planning_skill = 1
+#	logistics_skill = 3
+#}
+
+### (Independentists) ###
+
+### Field Marshals ###
+
+#create_field_marshal = {
+#	name = "Emilio Aguinaldo"
+#	portrait_path = "gfx/leaders/PHI/Portrait_Philippines_Emilio_Aguinaldo.tga"
+#	traits = { war_hero brilliant_strategist }
+#	skill = 4
+#	attack_skill = 4
+#	defense_skill = 2
+#	planning_skill = 3
+#	logistics_skill = 4
+#}
+
+### (Moros) ###
+
+### Field Marshals ###
+
+#create_field_marshal = {
+#	name = "Jainal Abirin II"
+#	portrait_path = "gfx/leaders/Arabia/portrait_arabia_generic_land_6.dds"
+#	traits = { harsh_leader war_hero trait_reckless inspirational_leader }
+#	skill = 3
+#	attack_skill = 4
+#	defense_skill = 1
+#	planning_skill = 2
+#	logistics_skill = 3
+#}
+
+### Corps Commanders ###
+
+#create_corps_commander = {
+#	name = "Salipada Khalid Pendatun"
+#	portrait_path = "gfx/leaders/Arabia/portrait_arabia_generic_land_7.dds"
+#	traits = { trait_reckless trickster }
+#	skill = 2
+#	attack_skill = 2
+#	defense_skill = 1
+#	planning_skill = 2
+#	logistics_skill = 2
+#}

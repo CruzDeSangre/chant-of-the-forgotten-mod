@@ -1,0 +1,132 @@
+political_actions = {
+
+	MEN_greater_mongolia = {
+
+		icon = decision_generic_military
+
+		allowed = {
+			original_tag = MEN
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9
+		}
+		complete_effect = {
+
+			add_state_core = 329
+			add_state_core = 330
+			add_state_core = 761
+			add_state_core = 621
+			add_state_core = 616
+			add_state_core = 746
+			add_state_core = 756
+			add_state_core = 760
+
+		}
+	}
+	
+	MON_dismantle_the_japanse_monopolies = {
+
+		priority = 8
+
+		icon = GFX_decision_generic_industry
+
+		allowed = { 
+			original_tag = MON
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			has_idea = japanese_assossiation
+		}
+
+		cost = 250
+
+		fire_only_once = yes
+
+		visible = {
+            has_idea = japanese_assossiation
+		}
+
+		complete_effect = {
+			remove_ideas = japanese_assossiation
+		}
+	}
+
+	MON_restore_the_yuan_dynasty = {
+
+		icon = GFX_decision_eng_ally_imperialist_coup
+
+		allowed = {
+			tag = MON
+		}
+
+		available = {
+			owns_state = 608
+			608 = { compliance > 60 }
+		}
+
+		cost = 150
+		ai_will_do = {
+			factor = 1000
+		}
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = MON_the_second_horde
+		}
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+				add_core_of = MON
+			}
+			swap_ideas = {
+				remove_idea = dreams_of_independence_independent5
+				add_idea = dreams_of_independence_independent6
+			}
+		}		
+	}
+
+	MON_reintegrate_the_buryats = {
+
+		icon = GFX_decision_hol_radio_oranje
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			owns_state = 566
+			owns_state = 564
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_state_core = 566
+			add_state_core = 564
+		}		
+	}
+
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=849
+	name="STATE_849" # Antofagasta
+	manpower = 107186
+	
+	state_category = rural
+
+	history={
+		owner = CHL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = CHL
+		victory_points = {
+			5131 1
+		}
+	}
+
+	provinces={
+		5131
+	}
+	local_supplies=0.0 
+}

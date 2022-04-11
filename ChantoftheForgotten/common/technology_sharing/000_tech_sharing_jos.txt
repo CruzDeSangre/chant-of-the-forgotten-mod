@@ -1,0 +1,108 @@
+technology_sharing_group = {
+
+	id = JAP_economic_union_sharing
+	name = JAP_economic_union_name
+	desc = JAP_economic_union_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+	categories = { industry }
+
+    available = {
+    	OR = {
+			original_tag = JAP
+			is_in_faction_with = JAP
+			is_subject_of = JAP
+		}
+    }
+}
+
+technology_sharing_group = {
+
+	id = JAP_showa_kenkyukai
+	name = JAP_showa_kenkyukai_name
+	desc = JAP_showa_kenkyukai_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+    	OR = {
+			original_tag = JAP
+			is_in_faction_with = JAP
+			is_subject_of = JAP
+		}
+    }
+}
+
+technology_sharing_group = {
+
+	id = PHI_air_research_exchange
+	name = PHI_air_research_exchange_name
+	desc = PHI_air_research_exchange_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+	categories = { air_equipment air_doctrine }
+
+    available = {
+    	OR = {
+			original_tag = SOV
+			original_tag = PHI
+		}
+		has_government = communism
+    }
+}
+
+technology_sharing_group = {
+
+	id = PHI_joint_research
+	name = PHI_joint_research_name
+	desc = PHI_joint_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+    	NOT = {
+			has_war_with = PHI
+			has_war_with = USA
+		}
+    }
+}
+
+technology_sharing_group = {
+
+	id = AUS_german_austrian_cooperation
+	name = AUS_german_austrian_cooperation_name
+	desc = AUS_german_austrian_cooperationi_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+    	OR = {
+			original_tag = GER
+			is_in_faction_with = GER
+			is_subject_of = GER
+		}
+    }
+}
+
+technology_sharing_group = {
+	id = AUS_soviet_austrian_military_academy_tech_group
+	name = AUS_soviet_austrian_military_academy_tech_group_name
+	desc = AUS_soviet_austrian_military_academy_tech_group_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1	
+
+	categories = { land_doctrine infantry_tech }
+
+    available = {
+    	NOT = { has_war_with = SOV }
+    	SOV = { has_government = communism }
+    }
+}

@@ -1,0 +1,18 @@
+units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Armada Brasileira"			
+		naval_base = 10980 # Rio de Janeiro
+		task_force = {
+			name = "Marinha Atlântica"
+			location = 10980 # Rio de Janeiro
+			ship = { name = "Dom Pedro II" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CHL creator = ENG version_name = "Queen Elizabeth Class" } } }
+			ship = { name = "Cândido Rondon" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CHL creator = ENG version_name = "Queen Elizabeth Class" } } }	
+			ship = { name = "Roberto Landell de Moura" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+			ship = { name = "Rafael Tobias de Aguiar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+			ship = { name = "Rodrigo Pinto Guedes" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+			ship = { name = "Bandeirante" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+
+		}
+	}
+}

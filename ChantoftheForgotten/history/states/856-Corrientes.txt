@@ -1,0 +1,26 @@
+
+state={
+	id=856
+	name="STATE_856"
+	manpower = 563000
+	
+	state_category = rural
+
+	resources={
+		oil=8
+	}
+
+	history={
+		owner = ARG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = ARG
+	}
+
+	provinces={
+		11007 8238 12964 8187 
+	}
+	local_supplies=0.0 
+}

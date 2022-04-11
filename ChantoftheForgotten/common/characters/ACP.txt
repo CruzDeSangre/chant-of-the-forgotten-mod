@@ -1,0 +1,17 @@
+characters={
+	ACP_tse_ven_soong={
+		name="Tse-ven Soong"
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/Portrait_T_V_Soong.tga"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			traits = {
+				financial_expert
+			}
+		}
+	}
+}

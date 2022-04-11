@@ -1,0 +1,260 @@
+
+defined_text = {
+	name = NOR_GetLabourLoyaltyLevel
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_labour_loyalty value = 5 compare = equals }
+		}
+		localization_key = NOR_labour_faction_supportive
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_labour_loyalty value = 4 compare = equals }
+		}
+		localization_key = NOR_labour_faction_satisfied
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_labour_loyalty value = 3 compare = equals }
+		}
+		localization_key = NOR_labour_faction_indifferent
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_labour_loyalty value = 2 compare = equals }
+		}
+		localization_key = NOR_labour_faction_dissatisfied
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_labour_loyalty value = 1 compare = less_than_or_equals }
+		}
+		localization_key = NOR_labour_faction_opposed
+	}
+}
+defined_text = {
+	name = NOR_GetLabourLoyaltyLevel2
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_labour_loyalty value = 5 compare = equals }
+		}
+		localization_key = NOR_faction_supportive
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_labour_loyalty value = 4 compare = equals }
+		}
+		localization_key = NOR_faction_satisfied
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_labour_loyalty value = 3 compare = equals }
+		}
+		localization_key = NOR_faction_indifferent
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_labour_loyalty value = 2 compare = equals }
+		}
+		localization_key = NOR_faction_dissatisfied
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_labour_loyalty value = 1 compare = less_than_or_equals }
+		}
+		localization_key = NOR_faction_opposed
+	}
+}
+defined_text = {
+	name = NOR_GetConservativeLoyaltyLevel
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_conservative_loyalty value = 5 compare = equals }
+		}
+		localization_key = NOR_faction_supportive
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_conservative_loyalty value = 4 compare = equals }
+		}
+		localization_key = NOR_faction_satisfied
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_conservative_loyalty value = 3 compare = equals }
+		}
+		localization_key = NOR_faction_indifferent
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_conservative_loyalty value = 2 compare = equals }
+		}
+		localization_key = NOR_faction_dissatisfied
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_conservative_loyalty value = 1 compare = less_than_or_equals }
+		}
+		localization_key = NOR_faction_opposed
+	}
+}
+defined_text = {
+	name = NOR_GetLiberalLoyaltyLevel
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_liberal_loyalty value = 5 compare = equals }
+		}
+		localization_key = NOR_faction_supportive
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_liberal_loyalty value = 4 compare = equals }
+		}
+		localization_key = NOR_faction_satisfied
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_liberal_loyalty value = 3 compare = equals }
+		}
+		localization_key = NOR_faction_indifferent
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_liberal_loyalty value = 2 compare = equals }
+		}
+		localization_key = NOR_faction_dissatisfied
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_liberal_loyalty value = 1 compare = less_than_or_equals }
+		}
+		localization_key = NOR_faction_opposed
+	}
+}
+defined_text = {
+	name = NOR_GetFarmersLoyaltyLevel
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_farmers_loyalty value = 5 compare = equals }
+		}
+		localization_key = NOR_faction_supportive
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_farmers_loyalty value = 4 compare = equals }
+		}
+		localization_key = NOR_faction_satisfied
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_farmers_loyalty value = 3 compare = equals }
+		}
+		localization_key = NOR_faction_indifferent
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_farmers_loyalty value = 2 compare = equals }
+		}
+		localization_key = NOR_faction_dissatisfied
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+			check_variable = { var = NOR_farmers_loyalty value = 1 compare = less_than_or_equals }
+		}
+		localization_key = NOR_faction_opposed
+	}
+}
+defined_text = {
+	name = NOR_Get_relevant_party
+	text = {
+		trigger = {
+			original_tag = NOR
+			has_country_leader = {
+				name = "Einar Gerhardsen"
+				ruling_only = yes
+			}
+		}
+		localization_key = NOR_labour_party
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+					has_country_leader = {
+						name = "Johan Ludwig Mowinckel"
+						ruling_only = yes
+					}
+		}
+		localization_key = NOR_liberal_party
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+				has_country_leader = {
+					name = "Ivar Lykke"
+					ruling_only = yes
+				}
+		}
+		localization_key = NOR_conservative_party
+	}
+	text = {
+		trigger = {
+			original_tag = NOR
+					has_country_leader = {
+						name = "Nils Trædal"
+						ruling_only = yes
+					}
+		}
+		localization_key = NOR_farmers_party
+	}
+}
+defined_text = {
+	name = NOR_army_debate_professionalism_string
+	text = {
+		trigger = {
+			original_tag = NOR
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+		localization_key = NOR_army_debate_professionalism_democratic_addition
+	}
+}
+defined_text = {
+	name = NOR_army_debate_numbers_string
+	text = {
+		trigger = {
+			original_tag = NOR
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+		localization_key = NOR_army_debate_numbers_democratic_addition
+	}
+}

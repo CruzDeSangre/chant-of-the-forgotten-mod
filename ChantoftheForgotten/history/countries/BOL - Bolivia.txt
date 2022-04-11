@@ -1,0 +1,282 @@
+﻿capital = 302
+
+oob = "BOL_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+set_country_flag = monroe_doctrine
+
+add_ideas = {
+	limited_conscription
+	bolivian_irredentism
+	BOL_foreign_monopolies
+	chaco_humillation
+}
+
+set_cosmetic_tag = BOL_names
+
+set_party_name = { ideology = neutrality long_name = BOL_communism_party_long name = BOL_communism_party }
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = construction_effort_2
+	complete_national_focus = production_effort_2
+	complete_national_focus = infrastructure_effort
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "BOL_1939"
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_refining = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.11.11"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neutrality = 70
+	fascism = 5
+	democratic = 5
+	communism = 20
+}
+
+create_country_leader = {
+	name = "José Luís Tejada"
+	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
+	picture = "gfx/leaders/BOL/Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism # liberalism, personally, but puppet for military
+	traits = {
+		military_puppet
+		financial_expert
+	}
+}
+
+create_country_leader = {
+	name = "Óscar Únzaga de la Vega"
+	desc = "POLITICS_OSCAR_UNZAGA_DESC"
+	picture = "gfx/leaders/BOL/Portrait_BOL_Óscar_Únzaga_de_la_Vega.dds"
+	expire = "1965.1.1"
+	ideology = left_nationalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José Antonio Arze"
+	desc = "POLITICS_JOSE_ARZE_DESC"
+	picture = "gfx/leaders/BOL/Portrait_BOL_José_Antonio_Arze.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José David Toro"
+	desc = "POLITICS_JOSE_ARZE_DESC"
+	picture = "gfx/leaders/BOL/Portrait_Bolivia_David_Toro.tga"
+	expire = "1965.1.1"
+	ideology = authsocialism
+	traits = {
+		#
+	}
+}
+
+#create_country_leader = {
+#	name = "Enrique Hertzog"
+#	desc = "POLITICS_ENRIQUE_HERTZOG_DESC"
+#	picture = "gfx/leaders/BOL/Portrait_BOL_Enrique_Hertzog.dds"
+#	expire = "1965.1.1"
+#	ideology = conservatism
+#	traits = {
+#		#
+#	}
+#}
+
+create_country_leader = {
+	name = "Enrique Peñaranda"
+	desc = "POLITICS_JOSE_ARZE_DESC"
+	picture = "gfx/leaders/BOL/Portrait_Bolivia_Enrique_Castillo.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+## Field Marshals ###
+
+create_field_marshal = {
+	name = "Germán Busch" #dead in 1939 #authoritarian socialist leader
+	portrait_path = "gfx/leaders/BOL/Portrait_BOL_German_Busch.tga"
+	traits = {
+		war_hero
+		media_personality
+		cavalry_officer
+	}
+	id = 36320
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "José David Toro" #exiled in 1937 #authoritarian socialist leader
+	portrait_path = "gfx/leaders/BOL/Portrait_Bolivia_David_Toro.tga"
+	traits = {
+		war_hero
+		media_personality
+		organizer
+	}
+	id = 36321
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+### Corps Commanders ###
+
+create_corps_commander = {
+	name = "Ángel Ayoroa" #not enough information, I suppose he was fine
+	portrait_path = "gfx/leaders/BOL/Portrait_BOL_Angel_Ayora.tga"
+	traits = {
+		war_hero
+		brilliant_strategist
+		infantry_leader
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Bernardino Bilbao Rioja" #exiled in 1939  #knows some things about airforce
+	portrait_path = "gfx/leaders/BOL/Portrait_Bolivia_Bernardino_Rioja.tga"
+	traits = {
+		trait_reckless
+		infantry_officer
+		ranger
+	}
+	id = 36322
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Gualberto Villarroel López" #not exiled but beaten to death in 1946 #left nationalist friend of peron
+	portrait_path = "gfx/leaders/BOL/Portrait_Bolivia_Gualberto_Lopez.tga"
+	traits = {
+		harsh_leader
+		infantry_officer
+	}
+	id = 36323
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Carlos Quintanilla Quiroga" #didnt die, yay #transition government, then enrique peñarda wins elections
+	portrait_path = "gfx/leaders/BOL/Portrait_Bolivia_Carlos_Quiroga.tga"
+	traits = {
+		infantry_officer
+		inflexible_strategist
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Manuel Marzana" #didnt die #not involved in politics I think
+	portrait_path = "gfx/leaders/BOL/Portrait_BOL_Manuel_Marzana.tga"
+	traits = {
+		infantry_officer
+		fortress_buster
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Enrique Peñaranda" #exiled in 1943 #conservative puppet, rigged elections
+	portrait_path = "gfx/leaders/BOL/Portrait_Bolivia_Enrique_Castillo.tga"
+	traits = {
+		war_hero
+		swamp_fox
+	}
+	id = 36324
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}

@@ -1,0 +1,191 @@
+﻿capital = 301
+
+oob = "PAR_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+set_country_flag = monroe_doctrine
+
+set_cosmetic_tag = PAR_neutrality
+
+set_stability = 0.4
+
+add_ideas = {
+	limited_conscription
+	learnings_of_the_chaco_war
+	guarani_communications
+	veterans_of_the_chaco
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 60
+	communism = 20
+	neutrality = 20
+}
+
+create_country_leader = {
+	name = "Rafael Franco"
+	desc = "POLITICS_RAFAEL_FRANCO_DESC"
+	picture =  "gfx/leaders/PAR/portrait_par_rafael_franco.dds"
+	expire = "1965.1.1"
+	ideology = authsocialism
+	traits = {
+		leon_kare
+	}
+}
+
+create_country_leader = {
+	name = "Eusebio Ayala"
+	desc = "POLITICS_EUSEBIO_AYALA_DESC"
+	picture = "gfx/leaders/PAR/Portrait_PAR_Eusebio_Ayala.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Higinio Morínigo"
+	desc = "POLITICS_HIGINIO_MORINGO_DESC"
+	picture = "gfx/leaders/PAR/Portrait_Paraguay_Hugenio_Morinigi.tga"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José Félix Estigarribia"
+	desc = "POLITICS_JOSE_ESTIGARRIBIA_DESC"
+	picture = "gfx/leaders/PAR/Portrait_PAR_Estigarribia.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+### Field Marshals ###
+create_field_marshal = {
+	name = "José Félix Estigarribia"
+	portrait_path = "gfx/leaders/PAR/Portrait_PAR_Estigarribia.tga"
+	traits = {
+		media_personality
+		war_hero
+		trickster
+		expert_improviser
+		fortress_buster
+	}
+	id = 36370
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+### Corps Commanders ###
+create_corps_commander = {
+	name = "Rafael Franco"
+	portrait_path = "gfx/leaders/PAR/portrait_par_rafael_franco.dds"
+	traits = {
+		war_hero
+		media_personality
+		commando
+		trickster
+		infantry_leader
+	}
+	id = 36371
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Raimundo Rolon Villasanti"
+	portrait_path = "gfx/leaders/PAR/Portrait_Paraguay_Raimundo_Rolon.tga"
+	traits = {
+		career_officer
+		war_hero
+		organizer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ivan Beliayev"
+	portrait_path = "gfx/leaders/PAR/Portrait_RUS_Mikhail_Drozdovsky.tga"
+	traits = {
+		career_officer
+		ranger
+		trickster
+		infantry_leader
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Higinio Morinigo Martinez"
+	portrait_path = "gfx/leaders/PAR/Portrait_Paraguay_Hugenio_Morinigi.tga"
+	traits = {
+		infantry_leader
+		fortress_buster
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Eugenio Garay"
+	portrait_path = "gfx/leaders/ARG/Portrait_ARG_Aramburu.tga"
+	traits = {
+		war_hero
+		trait_engineer
+		desert_fox
+		trickster
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Alfredo Stroessner"
+	portrait_path = "gfx/leaders/PAR/Portrait_PAR_Alfredo_Stroessner.tga"
+	traits = {
+		career_officer
+		ranger
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}

@@ -1,0 +1,210 @@
+﻿capital = 4
+
+oob = "AUS_1936"
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	early_fighter = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 25
+	fascism = 70
+	communism = 5
+}
+
+add_ideas = {
+	disarmed_nation
+	AUS_treaty_of_saint_germain
+	Heimwehr
+}
+
+set_cosmetic_tag = AUS_names
+
+set_party_name = { ideology = fascism long_name = AUS_neutrality_party name = AUS_neutrality_party }
+set_party_name = { ideology = neutrality long_name = AUS_kingdom name = AUS_kingdom }
+
+create_country_leader = {
+	name = "Arthur Seyss-Inquart"
+	desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+	picture = "gfx/leaders/AUS/Portrait_AUS_Arthur_Seyss_Inquart.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kurt Schuschnigg"
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "gfx/leaders/AUS/Portrait_AUS_Kurt_Schuschnigg.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Karl Renner"
+	desc = "POLITICS_KARL_RENNER_DESC"
+	picture = "gfx/leaders/AUS/Portrait_AUS_Karl_Renner.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alfred Klahr"
+	desc = "POLITICS_ALFRED_KLAHR_DESC"
+	picture = "gfx/leaders/AUS/Portrait_AUS_Alfred_Klahr.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Otto von Habsburg"
+	desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+	picture = GFX_Portrait_hungary_otto_von_hapsburg
+	expire = "1965.1.1"
+	ideology = monarchism
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Alfred Jansa von Tannenau"
+	portrait_path = "gfx/leaders/AUS/Portrait_AUS_Alfred_Jansa.tga"
+	traits = {
+		skilled_staffer
+		organizer
+		inflexible_strategist
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	id = 3810
+}
+
+create_corps_commander = {
+	name = "Wilhelm Zehner"
+	portrait_path = "gfx/leaders/AUS/Portrait_AUS_Wilhelm_Zehner.tga"
+	traits = {
+		brilliant_strategist
+		infantry_officer
+		trait_mountaineer
+		career_officer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+	id = 3811
+}
+
+create_corps_commander = {
+	name = "Karl Eglseer"
+	portrait_path = "gfx/leaders/AUS/Portrait_AUS_Karl_Eglseer.dds"
+	traits = { trait_mountaineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Franz Böhme"
+	portrait_path = "gfx/leaders/AUS/Portrait_AUS_Franz_Bohme.tga"
+	traits = {
+		harsh_leader
+		infantry_officer
+		winter_specialist
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Friedrich Materna"
+	portrait_path = "gfx/leaders/AUS/Portrait_AUS_Friedrich_Materna.tga"
+	traits = {
+		infantry_officer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Julius Ringel"
+	portrait_path = "gfx/leaders/AUS/Portrait_AUS_Julius_Ringel.tga"
+	traits = {
+		career_officer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}

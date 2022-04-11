@@ -1,0 +1,363 @@
+﻿capital = 525 #South Korea - Seoul or Busan
+
+oob = "KOR_1936"
+
+set_stability = 0.4
+set_war_support = 0.4
+
+set_research_slots = 3
+set_fuel_ratio = 1.0
+add_ideas = {
+	limited_conscription
+	a_proud_nation
+	destroyed_army
+	struggling_economy
+	
+}
+
+set_cosmetic_tag = KOR_names
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	gw_artillery = 1
+	gwtank = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	mass_assault = 1
+	
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		pre_dreadnoughts = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+	}
+}
+
+set_convoys = 40
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 30
+	fascism = 20
+	communism = 30
+	neutrality = 20
+}
+
+create_country_leader = {
+	name = "Kim Koo"
+	desc = ""
+	picture = "gfx/leaders/JOS/Kim_Koo.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Kim Il-sung"
+	desc = ""
+	picture = "gfx/leaders/JOS/portrait_kor_kim_il_sung.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Yi Kang"
+	desc = ""
+	picture = "gfx/leaders/JOS/portrait_kor_yi_kang.dds"
+	expire = "1965.1.1"
+	ideology = monarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Yi Un"
+	desc = ""
+	picture = "gfx/leaders/JOS/portrait_kor_yi_un.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Lee Beom-seok"
+	portrait_path = "gfx/leaders/JOS/Lee_Beom_seok.tga"
+	traits = { war_hero organizer }
+	id = 20170
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Kim Jwa-jin"
+	portrait_path = "gfx/leaders/JOS/Portrait_Asia_Generic_navy_new_5.tga"
+	traits = { trait_JOS_anarchist trickster scavenger expert_improviser }
+	id = 15920
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Kim Won-bong"
+	portrait_path = "gfx/leaders/JOS/Portrait_Asia_Generic_new_6.tga"
+	traits = { trait_JOS_anarchist ambusher }
+	id = 15921
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Hong Beom-do"
+	portrait_path = "gfx/leaders/JOS/Portrait_Asia_Generic_land_new_1.tga"
+	traits = { infantry_leader }
+	id = 20171
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ji Cheong-cheon"
+	portrait_path = "gfx/leaders/JOS/Portrait_KOR_Ji_Cheong_cheon.tga"
+	traits = { career_officer trait_mountaineer guerilla_fighter }
+	id = 20172
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Kim Hong-il"
+	portrait_path = "gfx/leaders/JOS/Portrait_KOR_Kim_Hong_il.tga"
+	traits = { career_officer }
+	id = 20173
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Sohn Won-yil"
+	portrait_path = "gfx/leaders/JOS/Portrait_Sohn_Won_Yil.tga"
+	traits = { bold blockade_runner concealment_expert }
+	id = 20173
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3 
+}
+
+create_field_marshal = {
+	name = "Kim Il-sung"
+	portrait_path = "gfx/leaders/JOS/portrait_kor_kim_il_sung.dds"
+	traits = { JAP_communist_sympathizer winter_specialist winter_expert }
+	id = 15930
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 5
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Choi Yong-kun"
+	portrait_path = "gfx/leaders/JOS/Portrait_Asia_Generic_new_5.tga"
+	traits = { JAP_communist_sympathizer hill_fighter guerilla_fighter }
+	id = 15931
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 3
+	
+}
+create_corps_commander = {
+	name = "Kim Chaek"
+	portrait_path = "gfx/leaders/JOS/Portrait_Asia_Generic_land_new_7.tga"
+	traits = { JAP_communist_sympathizer trait_reckless winter_specialist }
+	id = 15932
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 1
+	
+}
+create_corps_commander = {
+	name = "Kim Tu-bong"
+	portrait_path = "gfx/leaders/JOS/Portrait_JOS_Kim_Du_Bong.dds"
+	traits = { JAP_communist_sympathizer commando }
+	id = 15933
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	
+}
+
+###Operatives###
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "Hong Sa-ik"
+		portrait_path = "gfx/leaders/JOS/Portrait_JOS_Hong_Sa-ik.dds"
+		traits = {
+			operative_commando
+		}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { KOR JAP }
+	}
+}
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Doglib Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Yi Class"
+		type = light_cruiser_1
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 3
+			ship_gun_upgrade = 3
+			ship_anti_air_upgrade = 3
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Doglib Class"			
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_mine_layer_1 
+		}
+	}
+	create_equipment_variant = {
+		name = "Yi Class"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1 
+		}
+	}
+	create_equipment_variant = {
+		name = "Sun-si Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+	}
+}
+
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 3000
+	producer = JAP
+}

@@ -1,0 +1,265 @@
+﻿capital = 671 #Hanoi
+
+oob = "VIN_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+	limited_conscription
+	war_economy
+	export_focus
+	guerrilla_warfare_vin
+	communists_in_the_north
+	sects_in_the_south
+}
+
+# Starting tech
+# clone of France
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 35
+	fascism = 10
+	communism = 45
+	neutrality = 10
+}
+
+#NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
+
+create_country_leader = {
+	name = "Cuong Đe" 
+	desc = ""
+	picture = "gfx/leaders/VIN/Portrait_Vietnam_Prinz_Cuong_De.tga"
+	expire = "1953.3.1"
+	ideology = rexism 
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ho Chí Minh" 
+	desc = ""
+	picture = "gfx/leaders/VIN/minh.dds"
+	expire = "1953.3.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Phan Quang Đán"
+	desc = ""
+	picture = "gfx/leaders/VIN/Portrait_VIN_Phan_Quang_Dan.tga"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Bao Đai"
+	desc = ""
+	picture = "gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.tga"
+	expire = "1953.3.1"
+	ideology = monarchism
+	traits = {
+		
+	}
+}
+
+### Marshal
+create_field_marshal = {
+	name = "Vo Nguyên Giáp"
+	portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Vo_Nguyen_Giap.dds"
+	traits = { JAP_communist_sympathizer brilliant_strategist organizer logistics_wizard }
+	id = 5252
+	skill = 4
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 6
+}
+create_field_marshal = {
+	name = "Nguyen Văn Hinh"
+	portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Van_Hinh.tga"
+	traits = { career_officer brilliant_strategist }
+	id = 5260
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+### Corps Commanders ###
+create_corps_commander = {
+	name = "Hoàng Văn Thái"
+	portrait_path = "gfx/leaders/VIN/Portrait_VIN_Hoang_Van_Thai.dds"
+	traits = { JAP_communist_sympathizer career_officer }
+	id = 5251
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Tran Văn Đôn"
+	portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Tran_Van_Don.tga"
+	traits = { infantry_officer }
+	id = 5262
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Lê Văn Ty"
+	portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Le_Van_Ty.tga"
+	traits = { }
+	id = 5263
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Duong Văn Minh"
+	portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Duong_Van_Minh.tga"
+	traits = { }
+	id = 5261
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Tran Quang Vinh"
+	portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Tran_Quang_Vinh.tga"
+	traits = { hidden_sympathies trait_engineer }
+	id = 5270
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Lê Quang Vinh"
+	portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Le_Quang_Vinh.tga"
+	traits = { hidden_sympathies trait_reckless trait_engineer }
+	id = 5271
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ho Chi Minh"
+	portrait_path = "gfx/leaders/VIN/minh.dds"
+	traits = { JAP_communist_sympathizer politically_connected trickster guerilla_fighter }
+	id = 5250
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+### Naval Commander ###
+create_navy_leader = {
+	name = "Le Quang My"
+	portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Le_Quang_My.tga"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Tran Van Chon"
+	portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Tran_Van_Chon.tga"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 3000
+	producer = FRA
+}

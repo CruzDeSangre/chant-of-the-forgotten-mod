@@ -1,0 +1,124 @@
+CHI_JAP = {
+    color = rgb { 255 191 191 }
+    color_ui = rgb { 255 191 191 }
+}
+
+YUN_defy = {
+    color = { 171  190  152 }
+    color_ui = { 171  190  152 }
+}
+
+XSM_HUI = {
+    color = { 9  171  190 }
+    color_ui = { 9  171  190 }
+}
+
+GXC_defy = {
+    color = { 9  171  190 }
+    color_ui = { 9  171  190 }
+}
+
+GXC_YUE = {
+    color = { 9  171  190 }
+    color_ui = { 9  171  190 }
+}
+
+GXC_CHI = {
+    color = { 9  171  190 }
+    color_ui = { 9  171  190 }
+}
+
+SHX_defy = {
+    color = { 9  171  190 }
+    color_ui = { 9  171  190 }
+}
+
+SHX_commie = {
+    color = { 9  171  190 }
+    color_ui = { 9  171  190 }
+}
+
+PORTS = {
+    color = { 69 157 208  }
+    color_ui = { 69 157 208  }
+}
+
+IND = {
+    color = rgb { 230  223  50  }
+    color_ui = rgb { 230  223  50  }
+}
+
+UKR_commie = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+UKR_kingdom = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+UKR_hetmanate = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+ARG_names = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+CAN_USA = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+USA_macarthur = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+USA_longism = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+MON_CHI = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+MAN_JAP = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+MAN_FNG = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+MAN_ZHI = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+MAN_CHI1 = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+MAN_CHI2 = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+MAN_CHI3 = {
+    color = rgb { 6 88 12  }
+    color_ui = rgb { 6 88 12  }
+}
+
+URSAL = {
+	color = rgb { 76 145 63 }
+	color_ui = rgb { 99 189 82 }
+}

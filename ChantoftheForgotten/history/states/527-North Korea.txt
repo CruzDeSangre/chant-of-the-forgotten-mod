@@ -1,0 +1,42 @@
+
+state={
+	id=527
+	name="STATE_NK"
+	manpower = 4774200
+	state_category = town
+	resources={
+		steel=18 # was: 30
+		tungsten=28 # was: 52
+	}
+
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			4052 = {
+				naval_base = 2
+			}
+		}
+		
+		victory_points = {
+			4052 3
+		}	
+
+		victory_points = {
+			1003 1
+		}	
+
+		victory_points = {
+			3852 1
+		}	
+
+		add_core_of = KOR
+	}
+
+	provinces={
+		848 852 906 912 978 1003 3912 4052 4107 6928 6963 7070 7155 7171 9790 9795 9918 10065 10083 11770 11775 11828 11835 11896 11915 12040 
+	}
+	local_supplies=0.0 
+}

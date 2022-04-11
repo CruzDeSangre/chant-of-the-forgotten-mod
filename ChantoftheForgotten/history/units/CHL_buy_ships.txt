@@ -1,0 +1,18 @@
+units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Armada de Chile"			
+		naval_base = 8222 # Valparaiso
+		task_force = {
+			name = "Armada del Pacífico"
+			location = 8222 # Valparaiso
+			ship = { name = "Esmeralda" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CHL creator = ENG version_name = "Queen Elizabeth Class" } } }
+			ship = { name = "Covadonga" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CHL creator = ENG version_name = "Queen Elizabeth Class" } } }	
+			ship = { name = "Arturo Prat" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+			ship = { name = "Carlos Condell" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+			ship = { name = "Bernardo O'Higgins" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+			ship = { name = "Manuel Rodríguez" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHL creator = ENG version_name = "S Class"} } }
+
+		}
+	}
+}

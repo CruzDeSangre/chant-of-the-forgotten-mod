@@ -1,0 +1,48 @@
+﻿capital = 326
+
+#oob = "GXC_1936"
+
+set_stability = 1
+set_war_support = 0.3
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	trench_warfare = 1
+}
+
+add_ideas = free_trade
+
+set_convoys = 200
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 100
+}
+
+create_country_leader = {
+	name = "Robert Ho Shai-Lai" 
+	desc = ""
+	picture = "gfx/leaders/CHI/Portrait_Robert_Ho_Shai_Lai.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		quartermaster_general
+	}
+}
+
+create_country_leader = {
+	name = "Chan Lim-pak" 
+	desc = ""
+	picture = "gfx/leaders/GXC/Portrait_GXC_Chen_Lianbo.tga"
+	expire = "1965.1.1"
+	ideology = left_nationalism
+	traits = {
+		
+	}
+}

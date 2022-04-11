@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_trait_JOS_anarchist"
+		texturefile = "gfx/interface/traits/personal/trait_JOS_anarchist.dds"
+	}
+
+	
+}
+

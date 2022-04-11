@@ -1,0 +1,816 @@
+political_actions = {
+	FIN_the_molotov_cocktail = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			original_tag = FIN
+		}
+		available = {
+			has_defensive_war = yes		
+		}
+		visible = {
+			always = yes
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_ideas = molotov_cocktail
+		}
+	}
+
+	VIN_decomission_the_lunge_mines = {
+
+		icon = any
+
+		allowed = {
+			tag = VIN
+		}
+		available = {
+			has_idea = lunge_mines
+		}
+		visible = {
+			has_idea = lunge_mines
+			has_completed_focus = VIN_lunge_mines
+		}
+		cost = 35
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_war = no
+				add = 1000
+			}
+		}
+		complete_effect = {
+			remove_ideas = lunge_mines
+			unlock_decision_tooltip = VIN_reintroduce_the_lunge_mines
+		}
+	}
+
+	VIN_reintroduce_the_lunge_mines = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			tag = VIN
+		}
+		available = {
+			NOT = { has_idea = lunge_mines }
+			has_defensive_war = yes
+		}
+		visible = {
+			NOT = { has_idea = lunge_mines }
+			has_completed_focus = VIN_lunge_mines
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_ideas = lunge_mines
+			unlock_decision_tooltip = VIN_decomission_the_lunge_mines
+		}
+	}
+
+	VIN_kick_out_the_vietnamese_administration_in_laos = {
+
+		icon = GFX_decision_generic_operation
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			always = no
+		}
+
+		priority = 10
+
+		fire_only_once = yes
+
+		days_mission_timeout = 7
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			NOT = { is_subject_of = VIN }
+			owns_state = 670
+			VIN = {
+				NOT = { owns_state = 670 }
+			}
+			VIN = { has_completed_focus = VIN_the_indochinese_union }
+		}
+
+		timeout_effect = {
+			670 = {
+				remove_dynamic_modifier = { modifier = jos_autonomous_state }
+			}
+		}
+
+	}
+
+	VIN_kick_out_the_vietnamese_administration_in_cambodia = {
+
+		icon = GFX_decision_generic_operation
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			always = no
+		}
+
+		priority = 10
+
+		fire_only_once = yes
+
+		days_mission_timeout = 7
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			NOT = { is_subject_of = VIN }
+			owns_state = 741
+			VIN = {
+				NOT = { owns_state = 741 }
+			}
+			VIN = { has_completed_focus = VIN_the_indochinese_union }
+		}
+
+		timeout_effect = {
+			741 = {
+				remove_dynamic_modifier = { modifier = jos_autonomous_state }
+			}
+		}
+
+	}
+
+}
+
+VIN_the_indochina_war = {
+
+	VIN_vietcong_guerrillas_forming_in_the_north = {
+
+		icon = GFX_decision_generic_civil_support
+
+		allowed = {
+			tag = VIN
+		}
+
+		available = {
+			OR = {
+			communism < 0.05
+			has_civil_war = yes
+			}
+		}
+
+		priority = 10
+
+		fire_only_once = yes
+
+		days_mission_timeout = 60
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_completed_focus = VIN_purge_the_communists
+		}
+
+		complete_effect = {
+			remove_ideas = communist_revolts
+			remove_unit_leader = 5251
+			remove_unit_leader = 5252
+			remove_unit_leader = 5250
+		}
+
+		timeout_effect = {
+			remove_ideas = communist_revolts
+			set_capital = 286
+			start_civil_war = { 
+				ideology = communism
+				size = 0.5
+				capital = 671
+				states = { 
+					671 670
+				}
+				keep_political_leader = yes
+				keep_unit_leaders = {
+					5260 5262 5263 5261 5272 5273
+				}
+			}
+
+			hidden_effect = {
+				random_other_country = {
+					limit = {
+						original_tag = VIN
+						has_government = communism
+					}
+					add_ideas = communist_guerrilla_training
+					remove_ideas = {
+						cao_dai
+						cao_dai_2
+						hoa_hao
+						hoa_hao_2
+					}
+					add_offsite_building = { type = arms_factory level = 3 }
+					kill_country_leader = yes
+					create_country_leader = {
+						name = "Ho Chí Minh" 
+						desc = ""
+						picture = "gfx/leaders/VIN/minh.dds"
+						expire = "1953.3.1"
+						ideology = leninism
+						traits = {
+							
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	VIN_anticommunists_proclaim_the_government_of_saigon= {
+
+		icon = GFX_decision_generic_speech
+
+		allowed = {
+			tag = VIN
+		}
+
+		available = {
+			OR = {
+			communism > 0.65
+			has_civil_war = yes
+			}
+		}
+
+		priority = 10
+
+		fire_only_once = yes
+
+		days_mission_timeout = 60
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_completed_focus = VIN_seize_full_power
+		}
+
+		complete_effect = {
+			remove_ideas = anti_communist_militias
+			remove_unit_leader = 5270
+			remove_unit_leader = 5271
+		}
+
+		timeout_effect = {
+			remove_ideas = anti_communist_militias
+			start_civil_war = { 
+				ideology = democratic
+				size = 0.5
+				capital = 286
+				states = { 
+					286 741
+				}
+				keep_political_leader = yes
+				keep_unit_leaders = {
+					5252 5251 5253
+				}
+			}
+
+			hidden_effect = {
+				remove_unit_leader = 5270
+				remove_unit_leader = 5271
+				random_other_country = {
+					limit = {
+						original_tag = VIN
+						has_government = democratic
+					}
+					add_ideas = anti_communist_front
+					remove_ideas = {
+						communist_guerrilla_training
+					}
+					add_offsite_building = { type = arms_factory level = 3 }
+					kill_country_leader = yes
+					create_country_leader = {
+						name = "Ngô Đình Diêm"
+						desc = ""
+						picture = "gfx/leaders/VIN/diem.dds"
+						expire = "1953.3.1"
+						ideology = socialism
+						traits = {
+							anti_communist
+						}
+					}
+					create_corps_commander = {
+						name = "Tran Quang Vinh"
+						portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Tran_Quang_Vinh.tga"
+						traits = { hidden_sympathies trait_engineer }
+						skill = 2
+						attack_skill = 1
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 3
+					}
+					create_corps_commander = {
+						name = "Lê Quang Vinh"
+						portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Le_Quang_Vinh.tga"
+						traits = { hidden_sympathies trait_reckless trait_engineer }
+						skill = 2
+						attack_skill = 1
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 2
+					}
+				}
+			}
+		}
+
+	}
+
+	VIN_ho_chi_minh_declares_rigged_elections = {
+
+		icon = GFX_decision_eng_blackshirt_speech
+
+		allowed = {
+			tag = VIN
+		}
+
+		available = {
+			OR = {
+			communism < 0.05
+			has_civil_war = yes
+			}
+		}
+
+		priority = 10
+
+		fire_only_once = yes
+
+		days_mission_timeout = 60
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_completed_focus = VIN_the_first_vietnamese_elections
+		}
+
+		complete_effect = {
+			remove_ideas = communist_revolts
+			remove_unit_leader = 5251
+			remove_unit_leader = 5252
+			remove_unit_leader = 5250
+		}
+
+		timeout_effect = {
+			remove_ideas = communist_revolts
+			remove_unit_leader = 5270
+			remove_unit_leader = 5271
+			set_capital = 286
+			start_civil_war = { 
+				ideology = communism
+				size = 0.5
+				capital = 671
+				states = { 
+					671 670
+				}
+				keep_political_leader = yes
+				keep_unit_leaders = {
+					5260 5262 5263 5261
+				}
+			}
+
+			hidden_effect = {
+				random_other_country = {
+					limit = {
+						original_tag = VIN
+						has_government = communism
+					}
+					add_ideas = communist_guerrilla_training
+					remove_ideas = {
+						anti_communist_front
+					}
+					add_offsite_building = { type = arms_factory level = 3 }
+					kill_country_leader = yes
+					create_country_leader = {
+						name = "Ho Chí Minh" 
+						desc = ""
+						picture = "gfx/leaders/VIN/minh.dds"
+						expire = "1953.3.1"
+						ideology = leninism
+						traits = {
+							
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	VIN_vietcong_guerrillas_fleeing_to_the_south = {
+
+		icon = GFX_decision_eng_blackshirt_march
+
+		allowed = {
+			tag = VIN
+		}
+
+		available = {
+			OR = {
+			communism < 0.05
+			has_civil_war = yes
+			}
+		}
+
+		priority = 10
+
+		fire_only_once = yes
+
+		days_mission_timeout = 60
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_completed_focus = VIN_deal_with_the_viet_minh
+			has_country_flag = VIN_negotiations_failed
+			NOT = { has_country_leader = { name = "Cuong Đe" ruling_only = no } }
+		}
+
+		complete_effect = {
+			remove_ideas = communist_revolts
+			remove_unit_leader = 5251
+			remove_unit_leader = 5252
+			remove_unit_leader = 5250
+		}
+
+		timeout_effect = {
+			remove_ideas = communist_revolts
+			start_civil_war = { 
+				ideology = communism
+				size = 0.5
+				capital = 286
+				states = { 
+					286 741
+				}
+				keep_political_leader = yes
+				keep_unit_leaders = {
+					5260 5262 5263 5261 5272 5273
+				}
+			}
+
+			hidden_effect = {
+				remove_unit_leader = 5251
+				remove_unit_leader = 5252
+				remove_unit_leader = 5250
+				random_other_country = {
+					limit = {
+						original_tag = VIN
+						has_government = communism
+					}
+					remove_ideas = sects_in_the_south
+					add_ideas = communist_guerrilla_training
+					add_offsite_building = { type = arms_factory level = 3 }
+					kill_country_leader = yes
+					create_country_leader = {
+						name = "Ho Chí Minh" 
+						desc = ""
+						picture = "gfx/leaders/VIN/minh.dds"
+						expire = "1953.3.1"
+						ideology = leninism
+						traits = {
+							
+						}
+					}
+					create_corps_commander = {
+						name = "Ho Chi Minh"
+						portrait_path = "gfx/leaders/VIN/minh.dds"
+						traits = { JAP_communist_sympathizer politically_connected trickster guerilla_fighter }
+						skill = 2
+						attack_skill = 1
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 3
+					}
+					create_corps_commander = {
+						name = "Hoàng Văn Thái"
+						portrait_path = "gfx/leaders/VIN/Portrait_VIN_Hoang_Van_Thai.dds"
+						traits = { JAP_communist_sympathizer career_officer }
+						skill = 2
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 1
+						logistics_skill = 2
+					}
+					create_field_marshal = {
+						name = "Vo Nguyên Giáp"
+						portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Vo_Nguyen_Giap.dds"
+						traits = { JAP_communist_sympathizer brilliant_strategist organizer logistics_wizard }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 3
+						logistics_skill = 6
+					}
+				}
+			}
+		}
+	}
+
+	VIN_communists_take_over_indochina = {
+
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			tag = VIN
+		}
+
+		available = {
+			has_civil_war = yes
+		}
+
+		priority = 10
+
+		fire_only_once = yes
+
+		days_mission_timeout = 60
+
+		is_good = no
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_completed_focus = VIN_deal_with_the_viet_minh
+			has_country_flag = VIN_negotiations_failed
+			has_country_leader = { name = "Cuong Đe" ruling_only = no }
+		}
+
+		complete_effect = {
+			remove_ideas = communist_revolts
+			remove_unit_leader = 5251
+			remove_unit_leader = 5252
+		}
+
+		timeout_effect = {
+			remove_ideas = communist_revolts
+			start_civil_war = { 
+				ideology = communism
+				size = 0.4
+				capital = 286
+				states = { 
+					286 741 670
+				}
+				keep_political_leader = yes
+				keep_unit_leaders = {
+					5260 5262 5263 5261 5272 5273
+				}
+			}
+
+			hidden_effect = {
+				remove_unit_leader = 5251
+				remove_unit_leader = 5252
+				random_other_country = {
+					limit = {
+						original_tag = VIN
+						has_government = communism
+					}
+					remove_ideas = sects_in_the_south
+					add_ideas = communist_guerrilla_training
+					add_offsite_building = { type = arms_factory level = 3 }
+					kill_country_leader = yes
+					create_country_leader = {
+						name = "Truòng Chinh" 
+						desc = ""
+						picture = "gfx/leaders/VIN/Portrait_VIN_Truong_Chinh.tga"
+						expire = "1953.3.1"
+						ideology = leninism
+						traits = {
+							
+						}
+					}
+					create_corps_commander = {
+						name = "Hoàng Văn Thái"
+						portrait_path = "gfx/leaders/VIN/Portrait_VIN_Hoang_Van_Thai.dds"
+						traits = { JAP_communist_sympathizer career_officer }
+						skill = 2
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 1
+						logistics_skill = 2
+					}
+					create_field_marshal = {
+						name = "Vo Nguyên Giáp"
+						portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Vo_Nguyen_Giap.dds"
+						traits = { JAP_communist_sympathizer brilliant_strategist organizer logistics_wizard }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 3
+						logistics_skill = 6
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+VIN_liberate_malaysia = {
+
+	VIN_protect_malaysia = {
+
+	icon = any
+
+	allowed = {
+		original_tag = VIN
+	}
+	available = {
+		MAL = { is_subject = no }
+		MAL = { has_war = no }
+	}
+	visible = {
+		has_completed_focus = VIN_support_malaysian_independence
+	}
+	cost = 0
+	fire_only_once = yes
+	ai_will_do = {
+		factor = 1
+	}
+	complete_effect = {
+		MAL = { country_event = generic.5 }
+	}
+}
+
+VIN_malaysian_war_of_independence = {
+
+	icon = GFX_decision_generic_prepare_civil_war
+
+	allowed = {
+		original_tag = VIN
+	}
+	available = { 
+		MAL = { is_subject_of = ENG } 
+		OR = {
+		MAL = { has_autonomy_state = autonomy_puppet }
+		MAL = { has_autonomy_state = autonomy_colony }
+		MAL = { has_autonomy_state = autonomy_dominion }
+		}		
+	}
+	visible = {
+		has_completed_focus = VIN_support_malaysian_independence
+	}
+	cost = 100
+	fire_only_once = yes
+	ai_will_do = {
+		factor = 1
+	}
+	complete_effect = {
+
+		hidden_effect = {
+			ENG = { 
+				set_autonomy = {
+					target = MAL
+					autonomy_state = autonomy_free
+				}
+			}
+			MAL = { leave_faction = yes }
+			MAL  = { division_template = {
+				name = "Guerrilla Division"
+			
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+			
+				}
+			  }	
+			}
+			MAL = { random_owned_controlled_state = {
+				prioritize = { 333 }
+				create_unit = {
+					division = "name = \"Guerrilla\" division_template = \"Guerrilla Division\" start_experience_factor = 0.3" 
+					owner = VIN
+					allow_spawning_on_enemy_provs = yes
+					count = 5
+				}
+			  }	
+			}
+			MAL = { random_owned_controlled_state = {
+				prioritize = { 336 }
+				create_unit = {
+					division = "name = \"Guerrilla\" division_template = \"Guerrilla Division\" start_experience_factor = 0.3" 
+					owner = VIN
+					allow_spawning_on_enemy_provs = yes
+					count = 5
+				}
+			  }	
+			}
+		}
+		ENG = { declare_war_on = { target = MAL type = take_state_focus } }
+		
+	}
+}
+
+VIN_send_weapons_to_the_malaysian = {
+
+	icon = GFX_decision_generic_industry
+
+	allowed = {
+		original_tag = VIN
+	}
+	available = {
+		has_equipment = {
+			infantry_equipment > 999
+		}
+		MAL = { is_subject = no }
+		MAL = { has_war_with = ENG }
+	}
+	visible = {
+		has_completed_focus = VIN_support_malaysian_independence
+	}
+	custom_cost_trigger = {
+		command_power > 14
+	}
+	custom_cost_text = TUR_decision_cost_kurd_rebels
+	fire_only_once = yes
+	ai_will_do = {
+		factor = 1
+	}
+	complete_effect = {
+		hidden_effect = { add_command_power = -15 }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1000
+			producer = VIN
+		}
+
+		MAL = { add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+
+		}
+	}
+
+	days_remove = 30
+}
+
+VIN_begin_malaysian_independence_movement = {
+
+	icon = GFX_decision_generic_political_rally
+
+	allowed = {
+		original_tag = VIN
+	}
+	available = {
+		MAL = { has_autonomy_state = autonomy_integrated_puppet }
+	}
+	visible = {
+		has_completed_focus = VIN_support_malaysian_independence
+	}
+	custom_cost_trigger = {
+		command_power > 14
+	}
+	custom_cost_text = TUR_decision_cost_kurd_rebels
+	fire_only_once = yes
+	ai_will_do = {
+		factor = 1
+	}
+
+	days_remove = 90
+
+	complete_effect = {
+		hidden_effect = { add_command_power = -15 }
+		MAL = { add_timed_idea = {
+			idea = independence_movement
+			days = 90
+			}
+		}
+
+		
+
+		}
+	}
+}

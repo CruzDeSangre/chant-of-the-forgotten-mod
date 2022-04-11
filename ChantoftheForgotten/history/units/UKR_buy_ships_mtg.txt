@@ -1,0 +1,15 @@
+units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Transfered Ships"			
+		naval_base = 11670
+		task_force = {
+			name = "Odessa Fleet"
+			location = 11670
+			ship = { name = "KUR Skoropadskyi" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = UKR creator = ENG version_name = "County Class" } } }
+			ship = { name = "KUR Konovalets" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = UKR creator = ENG version_name = "County Class" } } }
+			ship = { name = "KUR Melnyk" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = UKR creator = ENG version_name = "County Class" } } }	
+			ship = { name = "KUR Bandera" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = UKR creator = ENG version_name = "County Class" } } }	
+		}
+	}
+}

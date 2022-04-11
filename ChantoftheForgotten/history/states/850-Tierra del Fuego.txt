@@ -1,0 +1,24 @@
+
+state={
+	id=850
+	name="STATE_850"
+	manpower = 1112
+	
+	state_category = pastoral
+
+	history={
+		owner = ARG
+		buildings = {
+			infrastructure = 1
+			11009 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = ARG
+	}
+
+	provinces={
+		11009 
+	}
+	local_supplies=0.0 
+}
