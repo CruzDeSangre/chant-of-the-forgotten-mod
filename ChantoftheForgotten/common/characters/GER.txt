@@ -1883,3 +1883,48 @@ characters={
 			}
 		}		
 	}
+	GER_karl_korsch={
+		name=karl_korsch
+		portraits={
+			army={
+				small="GER_karl_korsch"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			#idea_token = GER_marxist_philosopher
+			available = {
+				has_completed_focus = GER_roter_morgen
+				NOT = { has_country_flag = ded_kotch }
+			}
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				GER_marxist_philosopher 
+			}
+		}		
+	}
+	GER_erich_mielke={
+		name=erich_mielke
+		portraits={
+			army={
+				small="GER_erich_mielke"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			#idea_token = GER_marxist_philosopher
+			available = {
+				has_completed_focus = GER_roter_morgen
+				#NOT = { has_country_flag = ded_kotch }
+			}
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				GER_nkvd_disciple 
+			}
+		}		
+	}
+	
