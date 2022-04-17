@@ -506,6 +506,9 @@ GER_reichskommissariats = {
 			controls_state = 88
 			controls_state = 91
 			controls_state = 89
+			controls_state = 87
+			controls_state = 98
+			controls_state = 97
 		}
 
 		cost = 0
@@ -533,6 +536,9 @@ GER_reichskommissariats = {
 					set_state_controller = 88
 					set_state_controller = 91
 					set_state_controller = 89
+					set_state_controller = 87
+					set_state_controller = 98
+					set_state_controller = 97
 
 					add_state_core = 10
 					add_state_core = 92
@@ -540,6 +546,9 @@ GER_reichskommissariats = {
 					add_state_core = 88
 					add_state_core = 91
 					add_state_core = 89
+					add_state_core = 87
+					add_state_core = 98
+					add_state_core = 97
 				}
 				add_timed_idea = { idea = ss_recruitment days = 365 }
 				inherit_technology = GER
@@ -851,6 +860,14 @@ GER_reichskommissariats = {
 			controls_state = 190
 			controls_state = 13
 			controls_state = 191
+			controls_state = 810
+			controls_state = 815
+			controls_state = 809
+			controls_state = 811
+			controls_state = 813
+			controls_state = 812
+			controls_state = 814
+			controls_state = 808
 		}
 
 		cost = 0
@@ -889,6 +906,14 @@ GER_reichskommissariats = {
 					set_state_controller = 190
 					set_state_controller = 13
 					set_state_controller = 191
+					set_state_controller = 810
+					set_state_controller = 815
+					set_state_controller = 809
+					set_state_controller = 811
+					set_state_controller = 813
+					set_state_controller = 812
+					set_state_controller = 814
+					set_state_controller = 808
 					
 					add_state_core = 97
 					add_state_core = 94
@@ -906,6 +931,14 @@ GER_reichskommissariats = {
 					add_state_core = 190
 					add_state_core = 13
 					add_state_core = 191
+					add_state_core = 810
+					add_state_core = 815
+					add_state_core = 809
+					add_state_core = 811
+					add_state_core = 813
+					add_state_core = 812
+					add_state_core = 814
+					add_state_core = 808
 				}
 				add_timed_idea = { idea = ss_recruitment days = 365 }
 				inherit_technology = GER
@@ -943,6 +976,8 @@ GER_reichskommissariats = {
 			controls_state = 221
 			controls_state = 228
 			controls_state = 227
+			controls_state = 137
+			controls_state = 834
 		}
 
 		cost = 0
@@ -993,6 +1028,8 @@ GER_reichskommissariats = {
 					set_state_controller = 221
 					set_state_controller = 228
 					set_state_controller = 227
+					set_state_controller = 137
+					set_state_controller = 834
 
 					add_state_core = 93
 					add_state_core = 91
@@ -1013,6 +1050,8 @@ GER_reichskommissariats = {
 					add_state_core = 221
 					add_state_core = 228
 					add_state_core = 227
+					add_state_core = 137
+					add_state_core = 834
 				}
 				add_timed_idea = { idea = ss_recruitment days = 365 }
 				inherit_technology = GER
@@ -1042,6 +1081,10 @@ GER_reichskommissariats = {
 			controls_state = 231
 			controls_state = 230
 			controls_state = 229
+			controls_state = 826
+			controls_state = 827
+			controls_state = 828
+			controls_state = 821
 		}
 
 		cost = 0
@@ -1073,6 +1116,10 @@ GER_reichskommissariats = {
 					set_state_controller = 233
 					set_state_controller = 231
 					set_state_controller = 230
+					set_state_controller = 826
+					set_state_controller = 827
+					set_state_controller = 828
+					set_state_controller = 821
 					transfer_state = 229
 
 					add_state_core = 218
@@ -1086,6 +1133,11 @@ GER_reichskommissariats = {
 					add_state_core = 231
 					add_state_core = 230
 					add_state_core = 229
+					
+					add_state_core = 826
+					add_state_core = 827
+					add_state_core = 828
+					add_state_core = 821
 				}
 				add_timed_idea = { idea = ss_recruitment days = 365 }
 				inherit_technology = GER
@@ -1165,7 +1217,7 @@ GER_reichskommissariats = {
 					add_state_core = 252
 					add_state_core = 255
 					add_state_core = 239
-					add_state_core = 410
+					#add_state_core = 410
 					add_state_core = 250
 					add_state_core = 256
 					add_state_core = 249
@@ -1180,7 +1232,12 @@ GER_reichskommissariats = {
 					add_state_core = 397
 					add_state_core = 262
 					add_state_core = 401
+					add_state_core = 829
+					add_state_core = 833
+					add_state_core = 825
+					
 				}
+				
 				add_timed_idea = { idea = ss_recruitment days = 365 }
 				inherit_technology = GER
 				GER = {
@@ -1188,6 +1245,15 @@ GER_reichskommissariats = {
 					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
 				}
 			}
+			RMO = {
+				every_core_state = {
+					limit = {
+						is_controlled_by = GER
+					}
+					transfer_state_to = RMO
+				}
+			}
+			
 		}
 	}
 
@@ -1271,6 +1337,8 @@ GER_reichskommissariats = {
 					add_state_core = 562
 					add_state_core = 637
 					add_state_core = 655
+					add_state_core = 822
+					add_state_core = 824
 
 					create_country_leader = {
 						name = "Practically Anarchy"
@@ -1289,6 +1357,14 @@ GER_reichskommissariats = {
 				GER = {
 					hidden_effect = { puppet = PREV }
 					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+				}
+			}
+			SIB = {
+				every_core_state = {
+					limit = {
+						is_controlled_by = GER
+					}
+					transfer_state_to = SIB
 				}
 			}
 		}
